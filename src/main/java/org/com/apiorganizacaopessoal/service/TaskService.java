@@ -10,8 +10,9 @@ public interface TaskService {
 
     void save(Task task);
     void update(Task task);
-    List<Optional<Task>> listALl();
+    List<Task> listALl();
     Task findById(UUID id);
     boolean existById(UUID uuid);
+    void deleteById(UUID uuid);
 
 }

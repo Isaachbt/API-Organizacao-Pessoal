@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Getter
@@ -23,6 +24,8 @@ public class Task {
     private String titulo;
     private String descricao;
     private boolean completa;
+    private LocalDateTime dataCriacao;
+    private LocalDateTime dataConclusao;
     @NotNull
     @Enumerated(EnumType.STRING)
     private PrioridadeTask prioridade;
